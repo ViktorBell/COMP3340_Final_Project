@@ -1,0 +1,96 @@
+<!-- 
+COMP 3340 Final Project
+Authors: Shieanne Bennett, Viktor Bellator, Tobi Opeola, Lankesh Sivakolundu 
+Details: The HTML document for our functional demo website Printed!3D which was developed for submission for our COMP 3340 course.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PRINTED! 3D</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- meta tags -->
+        <meta name="keywords" content="printed3d, 3d printing, 3d models, models, shop, online shop">
+        <meta name="description" content="PRINTED!3D is an online shop to buy 3D printed models that ship directly to your home once completed. Browse our collection of 3D models, make selections on colour, texture and size, and then place your order.">
+        <meta name="author" content="Shieanne, Viktor, Lankesh, Tobi">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+            /*
+                Details: The CSS stylesheet for our functional demo website Printed!3D which was developed for submission for our COMP 3340 course.
+            */
+
+            /* Navigation Banner Styles */
+            /* ------------------------ */
+            #nav-banner {
+                display: inline-flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                width: 98%;
+            }
+
+            #menu-icon {
+                width: 35px;
+                height: 5px;
+                background-color: white;
+                margin: 6px 0;
+            }
+
+            #site-name > h1 {
+                color: white;
+            }
+
+            /* Web Page Body Styles */
+            /* -------------------- */
+            body {
+                background-color: black;
+                height: 100%;
+                width: 100%;
+            }
+
+            /* Landing Page Styles */
+            #home > #home-img{
+                background-image: url(images/homeimage.jpg);
+                filter: blur(8px);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #home > p {
+                margin: 25%;
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Content for Navigation Banner (Same across all pages) -->
+        <div id="nav-banner">
+            <div id="menu">
+                <div id="menu-icon"></div>
+                <div id="menu-icon"></div>
+                <div id="menu-icon"></div>
+            </div>
+            <div id="site-name">
+                <h1>PRINTED!3D</h1>
+            </div>
+            <div id="cart">
+                <i style="font-size:24px; color: white;" class="fa">&#xf07a;</i>
+            </div>
+        </div>
+        
+        <!-- Content for landing page -->
+        <div id="home">
+            <div id="home-img">
+                
+            </div>
+            <p>
+                    Welcome to PRINTED!3D<br>
+                    A 3D printing service offering a collection of 3D models to choose from to have printed and shipped directly to you to add to your collection. In order to use our service, please sign in to begin shopping.
+                </p>
+        </div>
+    </body>
+</html>

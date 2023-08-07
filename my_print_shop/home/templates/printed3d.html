@@ -25,44 +25,158 @@ Details: The HTML document for our functional demo website Printed!3D which was 
             /* Navigation Banner Styles */
             /* ------------------------ */
             #nav-banner {
-                display: inline-flex;
+                display: flex;
                 flex-wrap: nowrap;
                 justify-content: space-between;
-                width: 98%;
+                align-items: center;
+                width: 100%;
+            }
+
+            #menu {
+                margin-left: 5%;
             }
 
             #menu-icon {
                 width: 35px;
-                height: 5px;
-                background-color: white;
+                height: 2px;
+                background-color: black;
                 margin: 6px 0;
             }
 
+            #site-name {
+                color: black;
+                text-align: center;
+            }
+
             #site-name > h1 {
-                color: white;
+                font-size: 50px;
+            }
+
+            #cart {
+                margin-right: 5%;
             }
 
             /* Web Page Body Styles */
             /* -------------------- */
             body {
-                background-color: black;
+                background-color: white;
                 height: 100%;
                 width: 100%;
             }
 
             /* Landing Page Styles */
-            #home > #home-img{
-                background-image: url(images/homeimage.jpg);
-                filter: blur(8px);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+            #catalog > #top-row {
+                width: 100%;
+                height: 30%;
+                display: inline-flex;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-bottom: 5px;
             }
 
-            #home > p {
-                margin: 25%;
-                color: white;
+            #catalog > #top-row > #animals {
+                background-image: url('animal.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+                width: 30%;
             }
+
+            #catalog > #top-row > #animals > h4 {
+                background-color: hsl(211, 100%, 95%, .65);
+                padding: 10px 5px;
+                margin: 0px 20%;
+                position: relative;
+                text-align: center;
+                top: 40%;
+            }
+
+            #catalog > #top-row > #geometry {
+                background-image: url('shapes.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+                width: 60%;
+            }
+
+            #catalog > #top-row > #geometry > h4 {
+                background-color: hsl(211, 100%, 95%, .65);
+                padding: 10px 5px;
+                margin: 0px 20%;
+                position: relative;
+                text-align: center;
+                top: 40%;
+            }
+
+            #catalog > #bottom-row {
+                width: 100%;
+                height: 30%;
+                display: inline-flex;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 5px;
+            }
+
+            #catalog > #bottom-row > #vehicles {
+                background-image: url('car.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+                width: 30%;
+            }
+
+            #catalog > #bottom-row > #vehicles > h4 {
+                background-color: hsl(211, 100%, 95%, .65);
+                padding: 10px 5px;
+                margin: 0px 20%;
+                position: relative;
+                text-align: center;
+                top: 40%;
+            }
+
+            #catalog > #bottom-row > #right {
+                width: 60%;
+                display: inline-flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+
+            #catalog > #bottom-row > #right > #characters {
+                background-image: url('face.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+                width: 48%;
+            }
+
+            #catalog > #bottom-row > #right > #characters > h4 {
+                background-color: hsl(211, 100%, 95%, .65);
+                padding: 10px 5px;
+                margin: 0px 20%;
+                position: relative;
+                text-align: center;
+                top: 40%;
+            }
+
+            #catalog > #bottom-row > #right > #architecture {
+                background-image: url('building.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+                width: 48%;
+            }
+
+            #catalog > #bottom-row > #right > #architecture > h4 {
+                background-color: hsl(211, 100%, 95%, .65);
+                padding: 10px 5px;
+                margin: 0px 20%;
+                position: relative;
+                text-align: center;
+                top: 40%;
+            }
+
         </style>
     </head>
     
@@ -75,22 +189,37 @@ Details: The HTML document for our functional demo website Printed!3D which was 
                 <div id="menu-icon"></div>
             </div>
             <div id="site-name">
-                <h1>PRINTED!3D</h1>
+                <h1>Fiction2Form</h1>
+                <p>3D MODELS - CUSTOMIZATION - SHIPPED TO YOU</p>
             </div>
             <div id="cart">
-                <i style="font-size:24px; color: white;" class="fa">&#xf07a;</i>
+                <i style="font-size:24px; color: black;" class="fa">&#xf07a;</i>
             </div>
         </div>
         
         <!-- Content for landing page -->
-        <div id="home">
-            <div id="home-img">
-                
+        <div id="catalog">
+            <div id="top-row">
+                <div id="animals">
+                    <h4>Animals</h4>
+                </div>
+                <div id="geometry">
+                    <h4>Geometry</h4>
+                </div>
             </div>
-            <p>
-                    Welcome to PRINTED!3D<br>
-                    A 3D printing service offering a collection of 3D models to choose from to have printed and shipped directly to you to add to your collection. In order to use our service, please sign in to begin shopping.
-                </p>
+            <div id="bottom-row">
+                <div id="vehicles">
+                    <h4>Vehicles</h4>
+                </div>
+                <div id="right">
+                    <div id="characters">
+                        <h4>Characters</h4>
+                    </div>
+                    <div id="architecture">
+                        <h4>Architecture</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
